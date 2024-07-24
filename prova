@@ -1,0 +1,38 @@
+{
+  "name": "ITALIA",
+  "author": "ANONYMUS",
+  "image": "https://th.bing.com/th/id/OIP.TwFpT4O6juUgxti-38HCfAHaHa?rs=1&pid=ImgDetMain",
+  "url": "",
+  "info": "",
+  "epg": "http://www.epgitalia.tv/gzip",
+  "groups": [
+    {
+      "name": "Italiane",
+      "image": "https://th.bing.com/th/id/OIP.8k-1-2Yr-ybPX4nRNOewxQHaEK?rs=1&pid=ImgDetMain",
+      "url": "http://salentino.newage.tf:2052/get.php?username=Alessio96&password=K0M0OvcG9l&type=m3u_plus&output=m3u8",
+      "epg": "http://www.epgitalia.tv/gzip",
+      "import": false
+    },
+    {
+      "name": "TV Italiane",
+      "image": "https://th.bing.com/th/id/OIP.TwFpT4O6juUgxti-38HCfAHaHa?rs=1&pid=ImgDetMain",
+      "url": "http://visionenigmista3.zapto.org/get.php?username=Clientepadre&password=Cognatozezzilo&type=m3u_plus",
+      "epg": "http://www.epgitalia.tv/gzip",
+      "import": false
+    },
+    {
+      "name": "Sport",
+      "image": "https://th.bing.com/th/id/OIP.sportlogo?pid=ImgDetMain",
+      "url": "http://nlv.visualtv.eu:23000/get.php?username=leogermaniaa&password=CyS9hmZUEB&type=m3u_plus",
+      "epg": "http://www.epgitalia.tv/gzip",
+      "import": false
+    },
+    {
+      "name": "Film",
+      "image": "https://th.bing.com/th/id/OIP.filmlogo?pid=ImgDetMain",
+      "url": "http://nlv.visualtv.eu:23000/get.php?username=vittoria50&password=SU6Fy5j7pC&type=m3u_plus",
+      "epg": "http://www.epgitalia.tv/gzip",
+      "import": false
+    }
+  ]
+}
