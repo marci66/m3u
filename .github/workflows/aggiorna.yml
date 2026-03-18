@@ -1,0 +1,27 @@
+name: Aggiungi Film alla Lista
+
+on:
+  workflow_dispatch: # Questo ti permette di aggiungere i film a mano con un click
+    inputs:
+      id_film:
+description: 'Inserisci solo l ID del film (es. 1097311)'
+        required: true
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Aggiungi link al file
+        run: |
+          echo "https://vixsrc.to{{ github.event.inputs.id_film }}?lang=it" >> lista.txt
+          sort -u lista.txt -o lista.txt # Rimuove i doppioni e ordina
+
+- name: Salva su GitHub
+        run: |
+          git config user.name "Aggiornatore Automatico"
+          git config user.email "actions@github.com"
+          git add lista.txt
+          git commit -m "Aggiunto film ${{ github.event.inputs.id_film }}"
+          git push
